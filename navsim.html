@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>PhoneGap Div-Table</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="navsim.css" />
+    <style>
+    body {margin:0px;font-size:large;}
+	.hidden {visibility:collapse;display:none;}
+	.expose {visibility:visible;display:block;} /* Here for completeness only. */
+	.copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    </style>
+	<script type="text/javascript" charset="utf-8" src="zepto-1.1.6.js"></script>
+	<script type="text/javascript">
+	//
+    // Wait for PhoneGap to load
+	document.addEventListener("deviceready", onDeviceReady, false);
+	//
+	function onDeviceReady() {
+		alert("device ready.");
+	}
+	//
+	function onLoad() {
+		//alert("body loaded.");
+	}
+    </script>
+</head>
+<body onload="onLoad()">
+<div id=app-header class="button button-block button-large">
+	<img align=left src=favicon-48x48.png>
+	Phonegap Div-Table
+	<button id=exit-button onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
+</div>
+
+<p /><a href=index.html>BACK</a><p />
+
+<div id=content style="margin:1em;">
+<div id=wrapper class=arrowsWrapper>
+	<div id=table0 class=table>
+		<div id=row1 class=tr><div class=td></div><div class=td></div><div class=td><img id=d1 class=arw src=i/iU.png></div><div class=td></div><div class=td></div></div>
+		<div id=row2 class=tr><div class=td></div><div class=td></div><div class=td><img id=d2 class=arw src=i/iU.png></div><div class=td></div><div class=td></div></div>
+		<div id=row3 class=tr><div class=td><img id=d3 class=arw src=i/iL.png></div><div class=td><img id=d4 class=arw src=i/iL.png></div><div class=td><img id=d5 class=arw src=i/i0.png></div><div class=td><img id=d6 class=arw src=i/iR.png></div><div class=td><img id=d7 class=arw src=i/iR.png></div></div>
+		<div id=row4 class=tr><div class=td></div><div class=td></div><div class=td><img id=d8 class=arw src=i/iD.png></div><div class=td></div><div class=td></div></div>
+		<div id=row5 class=tr><div class=td></div><div class=td></div><div class=td><img id=d9 class=arw src=i/iD.png></div><div class=td></div><div class=td></div></div>
+	</div>
+</div>
+</div>
+
+<div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
+    <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.table {
+display:table;
+width:80%;
+min-width:80%;
+margin:1em 5% 3em 10%;
+}
+.tr {display:table-row;width:100%;}
+.tr:hover {background-color:#EEE8AA; /* #FF69B4 Hot Pink - Thanks Paul */}
+.th {
+display:table-cell;
+max-width:300px; /* This is a hack */
+width:33%;
+text-align:center;
+border:solid black 1px;
+overflow:auto;
+font-weight:bold;
+background-color:#aaddaa;
+padding:0.25em;
+}
+.td {
+display:table-cell;
+max-width:300px; /* This is a hack */
+width:33%;
+text-align:left;
+border:solid black 1px;
+overflow:auto;
+padding:0.25em;
+}
+.td:hover {background-color:#FFD700; /* Gold */}
+
+@media only screen and (min-width:321px) and (max-width:600px) {
+.table {display:table;width:90%; margin:1em 2% 3em 5%;}
+.tr {display:table-row;min-width:100%;}
+.th {min-width:150px;font-size:medium;} /* This is a hack */
+.td {min-width:150px;font-size:medium;} /* This is a hack */
+}
+
+@media only screen and (max-width:320px) {
+.table {display:table;width:90%; margin:1em 2% 3em 5%;}
+.tr {display:table-row;min-width:100%;}
+.th {display:table-cell;min-width:80px;font-size:small;}
+.td {display:table-cell;min-width:80px;font-size:small;}
+}

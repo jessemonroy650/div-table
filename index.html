@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>PhoneGap Div-Table</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="table.css" />
+    <style>
+    body {margin:0px;font-size:large;}
+	.hidden {visibility:collapse;display:none;}
+	.expose {visibility:visible;display:block;} /* Here for completeness only. */
+	.copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    </style>
+    <script type="text/javascript" charset="utf-8" src="fastclick.js"></script>
+    <script type="text/javascript">
+	//
+    // Wait for PhoneGap to load
+	document.addEventListener("deviceready", onDeviceReady, false);
+	//
+	function onDeviceReady() {
+		alert("device ready.");
+	}
+	//
+	function onLoad() {
+		//alert("body loaded.");
+	}
+    </script>
+</head>
+<body onload="onLoad()">
+<div id=app-header class="button button-block button-large">
+	<img align=left src=favicon-48x48.png>
+	Phonegap Div-Table
+	<button id=exit-button onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
+</div>
+
+<div id=content style="margin:1em;">
+	<div id=table0 class=table>
+		<div id=row0 class=tr><div class=th>a</div><div class=th>b</div><div class=th>c</div></div>
+		<div id=row1 class=tr><div class=td>1</div><div class=td>2</div><div class=td>3</div></div>
+		<div id=row2 class=tr><div class=td>1</div><div class=td>2</div><div class=td>3</div></div>
+	</div>
+</div>
+
+<a href=navsim.html>navsim</a><p />
+
+<div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
+    <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
+</div>
+</body>
+</html>
